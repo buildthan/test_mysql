@@ -52,6 +52,7 @@ app.get('/',function(req,res){
 });
 
 app.get('/welcome', function(req,res){
+    console.log(req.session.displayname);
     if(req.session.displayname){ //로그인을 성공한 경우, 즉 로그인 성공여부를 묻는다. 다음부터는 해당 부분에 id를 집어넣을 것.
         res.send(`
         <h1>Hello ${req.session.displayname}</h1>
@@ -148,7 +149,8 @@ app.post('/auth/login', function(req,res){ //로그인을 처리하는 기능 (�
         }
 
             if(base64.encode(results[0].salt+pwd) === results[0].password){ //비번이 일치하는 경우
-                req.session.displayname = results[0].displayname;
+                console.log(results[0].displayName);
+                req.session.displayname = results[0].displayName;
                 return req.session.save( () => {
                     res.redirect('/welcome');
                     });

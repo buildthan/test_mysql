@@ -19,5 +19,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildthan/test_mysql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buildthan/test_mysql/issues"
+  },
+  "homepage": "https://github.com/buildthan/test_mysql#readme",
   "description": ""
 }
