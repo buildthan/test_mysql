@@ -188,6 +188,6 @@ app.get('/auth/login', function(req,res){ //로그인 인터페이스
     res.send(output);
 })
 
-app.listen(3003,function(){
-    console.log('Connected 3003 port!!');
+app.listen(80,function(){
+    console.log('Connected 80 port!!');
 });
