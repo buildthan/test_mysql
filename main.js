@@ -7,7 +7,7 @@ var base64 = require('base-64')
 var conn = mysql.createConnection({
     host : 'localhost',
     user : 'root',
-    password: '111111',
+    password: 'kyh04138338!!',
     database: 'o2'
 });
 conn.connect();
@@ -23,7 +23,7 @@ app.use(session({
         host : 'localhost',
         port : 3306,
         user: 'root',
-        password: '111111',
+        password: 'kyh04138338!!',
         database: 'o2',
         path : './sessions'})
 }));
